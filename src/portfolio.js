@@ -3,7 +3,7 @@
 // To change portfolio colors globally go to the  _globalColor.scss file
 
 import emoji from "react-easy-emoji";
-import splashAnimation from "./assets/lottie/splashAnimation"; // Rename to your file name for custom animation
+import splashAnimation from "./assets/lottie/splashAnimation.json"; // Rename to your file name for custom animation
 
 // Splash Screen
 
@@ -21,25 +21,25 @@ const illustration = {
 
 const greeting = {
   username: "Paulo Espinola",
-  title: "Hola , Paulo Espinola",
+  title: "Hola, soy Paulo",
   subTitle: emoji(
-    "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."
+    "Un apasionado Desarrollador Web con experiencia en crear sitios web y aplicaciones con WordPress / Drupal / Strapi / JavaScript / React.js / Node.js y otras tecnologías modernas."
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
+    "https://drive.google.com/file/d/TU_CV_AQUI/view?usp=sharing", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
 // Social Media Links
 
 const socialMediaLinks = {
-  github: "https://github.com/saadpasta",
-  linkedin: "https://www.linkedin.com/in/saadpasta/",
-  gmail: "saadpasta70@gmail.com",
-  gitlab: "https://gitlab.com/saadpasta",
-  facebook: "https://www.facebook.com/saad.pasta7",
-  medium: "https://medium.com/@saadpasta",
-  stackoverflow: "https://stackoverflow.com/users/10422806/saad-pasta",
+  github: "https://github.com/PauloFicher",
+  linkedin: "https://www.linkedin.com/in/pauloespinola/",
+  gmail: "pauloespinola3@outlook.com",
+  // gitlab: "",
+  // facebook: "",
+  // medium: "",
+  // stackoverflow: "",
   // Instagram, Twitter and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia
   display: true // Set true to display this section, defaults to false
@@ -48,16 +48,14 @@ const socialMediaLinks = {
 // Skills Section
 
 const skillsSection = {
-  title: "What I do",
-  subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+  title: "Soluciones que ofrezco",
+  subTitle: "CONVIERTO NECESIDADES DE NEGOCIO EN SOLUCIONES DIGITALES EFECTIVAS",
   skills: [
-    emoji(
-      "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
-    ),
-    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
-    emoji(
-      "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
-    )
+    emoji("Diseño y desarrollo de landing pages estratégicas para captar leads y aumentar conversiones."),
+    emoji("Creación de sitios web administrables con WordPress (Elementor, WooCommerce) para negocios que buscan autogestionarse."),
+    emoji("Desarrollo de aplicaciones web a medida con React y Next.js para proyectos que requieren escalabilidad y personalización."),
+    emoji("Optimización de rendimiento, SEO técnico y analítica para maximizar el retorno de inversión."),
+    emoji("Consultoría en estrategia digital para alinear la tecnología con los objetivos de negocio.")
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
@@ -73,10 +71,6 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fab fa-css3-alt"
     },
     {
-      skillName: "sass",
-      fontAwesomeClassname: "fab fa-sass"
-    },
-    {
       skillName: "JavaScript",
       fontAwesomeClassname: "fab fa-js"
     },
@@ -89,33 +83,18 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fab fa-node"
     },
     {
-      skillName: "swift",
-      fontAwesomeClassname: "fab fa-swift"
+      skillName: "wordpress",
+      fontAwesomeClassname: "fab fa-wordpress"
     },
     {
-      skillName: "npm",
-      fontAwesomeClassname: "fab fa-npm"
+      skillName: "Elementor",
+      fontAwesomeClassname: "fab fa-elementor"
     },
     {
-      skillName: "sql-database",
-      fontAwesomeClassname: "fas fa-database"
-    },
-    {
-      skillName: "aws",
-      fontAwesomeClassname: "fab fa-aws"
-    },
-    {
-      skillName: "firebase",
-      fontAwesomeClassname: "fas fa-fire"
-    },
-    {
-      skillName: "python",
-      fontAwesomeClassname: "fab fa-python"
-    },
-    {
-      skillName: "docker",
-      fontAwesomeClassname: "fab fa-docker"
+      skillName: "drupal",
+      fontAwesomeClassname: "fab fa-drupal"
     }
+    
   ],
   display: true // Set false to hide this section, defaults to true
 };
@@ -126,23 +105,12 @@ const educationInfo = {
   display: true, // Set false to hide this section, defaults to true
   schools: [
     {
-      schoolName: "Harvard University",
-      logo: require("./assets/images/harvardLogo.png"),
-      subHeader: "Master of Science in Computer Science",
-      duration: "September 2017 - April 2019",
-      desc: "Participated in the research of XXX and published 3 papers.",
-      descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-      ]
-    },
-    {
-      schoolName: "Stanford University",
-      logo: require("./assets/images/stanfordLogo.png"),
-      subHeader: "Bachelor of Science in Computer Science",
-      duration: "September 2013 - April 2017",
-      desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
-      descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
+      schoolName: "UCOM - Universidad Comunera",
+      
+      subHeader: "Licenciatura en Marketing Digital",
+      duration: "2023",
+      desc: "Enfoque en estrategias digitales y desarrollo web.",
+      descBullets: []
     }
   ]
 };
@@ -150,7 +118,7 @@ const educationInfo = {
 // Your top 3 proficient stacks/tech experience
 
 const techStack = {
-  viewSkillBars: true, //Set it to true to show Proficiency Section
+  viewSkillBars: false, // Cambiado a false como solicitaste - no mostrar barras de progreso
   experience: [
     {
       Stack: "Frontend/Design", //Insert stack or technology you have experience in
@@ -174,30 +142,47 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Software Engineer",
-      company: "Facebook",
-      companylogo: require("./assets/images/facebookLogo.png"),
-      date: "June 2018 – Present",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-      ]
+      role: "Frontend Web Developer & Administrador Web",
+company: "Tigo Paraguay",
+companylogo: require("./assets/images/millicom_international_cellular_tigo_logo.jpeg"), // Cambiar logo después
+date: "JUN 2025 – Presente",
+desc: "Desarrollo frontend y administración web de la plataforma principal de Tigo Paraguay, incluyendo optimización SEO y análisis de datos.",
+descBullets: [
+  "Desarrollo y mantenimiento de componentes frontend con tecnologías modernas",
+  "Implementación de mejoras SEO, datos estructurados y optimización de rendimiento", 
+  "Análisis de métricas web con Google Analytics 4 y generación de reportes",
+  "Administración de contenido, actualizaciones y desarrollo de nuevas páginas",
+  "Optimización de Core Web Vitals y experiencia de usuario"
+]
     },
     {
-      role: "Front-End Developer",
-      company: "Quora",
-      companylogo: require("./assets/images/quoraLogo.png"),
-      date: "May 2017 – May 2018",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    },
+  role: "Website Content Editor & E-commerce",
+  companylogo: require("./assets/images/nestle_s_a__logo.jpeg"),
+  company: "Nestlé Business Services", 
+  date: "FEB 2024 – JUN 2025", // Agrega las fechas reales
+  desc: "Gestión de contenido web y desarrollo de landing pages para múltiples marcas del portafolio Nestlé, incluyendo Purina, CatChow, DogChow y Nestlé Profesional.",
+  descBullets: [
+    "Desarrollo y mantenimiento de landing pages para campañas de marketing de marcas Purina",
+    "Administración de CMS Drupal para gestión de contenido multiplataforma", 
+    "Gestión de e-commerce con Magento para Nestlé Profesional (productos para chefs)",
+    "Creación y adaptación de contenido web optimizado para diferentes audiencias",
+    "Mantenimiento y actualización de catálogos de productos en plataformas e-commerce"
+  ]
+},
     {
-      role: "Software Engineer Intern",
-      company: "Airbnb",
-      companylogo: require("./assets/images/airbnbLogo.png"),
-      date: "Jan 2015 – Sep 2015",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    }
+  role: "Data Extraction Specialist & Web Scraping Developer",
+  companylogo: require("./assets/images/globalnewsgroup_logo200x200.webp"),
+  company: "GlobalNews Group",
+  date: "OCT 2021 – FEB 2024", 
+  desc: "Desarrollo de sistemas automatizados para extracción y replicación de contenido noticioso de múltiples fuentes digitales.",
+  descBullets: [
+    "Desarrollo de scripts con regex para extracción automatizada de contenido web",
+    "Extracción de metadatos estructurados (body, datetime, h1) desde código fuente", 
+    "Automatización de recolección de noticias de medios como Infobae para newsletter",
+    "Desarrollo de interfaces para replicación de contenido en formato newsletter",
+    "Optimización de procesos de scraping para múltiples fuentes de noticias"
+  ]
+}
   ]
 };
 
@@ -212,29 +197,50 @@ const openSource = {
 // Some big projects you have worked on
 
 const bigProjects = {
-  title: "Big Projects",
-  subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
+  title: "Proyectos Destacados",
+  subtitle: "ALGUNOS PROYECTOS EN LOS QUE HE TRABAJADO",
   projects: [
     {
-      image: require("./assets/images/saayaHealthLogo.webp"),
-      projectName: "Saayahealth",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: require("./assets/images/BannercardLANDING.png"), // Cambiar imagen después
+      projectName: "Landing Page Moderna",
+      projectDesc: "Landing page con diseño innovador y animaciones fluidas",
       footerLink: [
         {
-          name: "Visit Website",
-          url: "http://saayahealth.com/"
+          name: "Ver Proyecto",
+          url: "https://modern-landing-page-lake.vercel.app/"
         }
-        //  you can add extra buttons here.
       ]
     },
     {
-      image: require("./assets/images/nextuLogo.webp"),
-      projectName: "Nextu",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: require("./assets/images/INTERMISSION.png"), // Cambiar imagen después
+      projectName: "Intermission Acousctics",
+      projectDesc: "Soluciones acústicas de alta calidad en Paraguay.",
       footerLink: [
         {
-          name: "Visit Website",
-          url: "http://nextu.se/"
+          name: "Ver Proyecto",
+          url: "https://intermissionacoustics.com/"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/CasaRamirezBanner.png"),
+      projectName: "Casa Ramirez Hospedaje",
+      projectDesc: "Un Lugar Ideal para Hospedarse en Caraguatay, Paraguay",
+      footerLink: [
+        {
+          name: "Ver Proyecto",
+          url: "https://casaramirezhospedaje.com/"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/ToDoAppTaskflow.png"),
+      projectName: "TaskFlow To Do App",
+      projectDesc: "Una aplicación de gestión de tareas sencilla y eficiente.",
+      footerLink: [
+        {
+          name: "Ver Proyecto",
+          url: "https://modern-landing-page-lake.vercel.app"
         }
       ]
     }
@@ -246,9 +252,9 @@ const bigProjects = {
 // Include certificates, talks etc
 
 const achievementSection = {
-  title: emoji("Achievements And Certifications 🏆 "),
+  title: emoji("Logros y Certificaciones"),
   subtitle:
-    "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
+    "¡Logros, Certificaciones y algunas cosas geniales que he hecho!",
 
   achievementsCards: [
     {
@@ -300,7 +306,7 @@ const achievementSection = {
       ]
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Blogs Section
@@ -324,7 +330,7 @@ const blogSection = {
         "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Talks Sections
@@ -343,7 +349,7 @@ const talkSection = {
       event_url: "https://www.facebook.com/events/2339906106275053/"
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Podcast Section
@@ -356,34 +362,33 @@ const podcastSection = {
   podcast: [
     "https://anchor.fm/codevcast/embed/episodes/DevStory---Saad-Pasta-from-Karachi--Pakistan-e9givv/a-a15itvo"
   ],
-  display: true // Set false to hide this section, defaults to true
-};
-
-// Resume Section
-const resumeSection = {
-  title: "Resume",
-  subtitle: "Feel free to download my resume",
-
-  // Please Provide with Your Podcast embeded Link
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 const contactInfo = {
-  title: emoji("Contact Me ☎️"),
+  title: emoji("Contacto"),
   subtitle:
-    "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+92-0000000000",
-  email_address: "saadpasta70@gmail.com"
+    "¿Quieres discutir un proyecto?",
+  number: "+595-984-175-707", // Agrega tu número si quieres
+  email_address: "pauloespinola3@outlook.com"
+};
+
+// Resume Section - Agregado para arreglar el error
+const resumeSection = {
+  title: "Resume",
+  subtitle: "Descarga mi CV para más detalles",
+  resumeLink: "https://drive.google.com/file/d/TU_CV_AQUI/view?usp=sharing", // Reemplaza con tu link real
+  display: true // Set false to hide the download resume button
 };
 
 // Twitter Section
 
 const twitterDetails = {
   userName: "twitter", //Replace "twitter" with your twitter username without @
-  display: true // Set true to display this section, defaults to false
+  display: false // Set true to display this section, defaults to false
 };
 
-const isHireable = false; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
+const isHireable = true; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
 
 export {
   illustration,
@@ -401,7 +406,7 @@ export {
   talkSection,
   podcastSection,
   contactInfo,
+  resumeSection,
   twitterDetails,
-  isHireable,
-  resumeSection
+  isHireable
 };

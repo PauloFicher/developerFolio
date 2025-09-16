@@ -26,7 +26,7 @@ const greeting = {
     "Un apasionado Desarrollador Web con experiencia en crear sitios web y aplicaciones con WordPress / Drupal / Strapi / JavaScript / React.js / Node.js y otras tecnologías modernas."
   ),
   resumeLink:
-    "https://drive.google.com/file/d/TU_CV_AQUI/view?usp=sharing", // Set to empty to hide the button
+    "./assets/CV/Paulo Espinola CV.pdf", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -377,7 +377,7 @@ const contactInfo = {
 const resumeSection = {
   title: "Resume",
   subtitle: "Descarga mi CV para más detalles",
-  resumeLink: "https://drive.google.com/file/d/TU_CV_AQUI/view?usp=sharing", // Reemplaza con tu link real
+  resumeLink: "./assets/CV/Paulo Espinola CV.pdf", // Reemplaza con tu link real
   display: true // Set false to hide the download resume button
 };
 

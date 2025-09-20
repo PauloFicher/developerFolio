@@ -243,7 +243,19 @@ const bigProjects = {
           url: "https://modern-landing-page-lake.vercel.app"
         }
       ]
+    },
+    {
+      image: require("./assets/images/CryptoVault.png"),
+      projectName: "CryptoVault",
+      projectDesc: "Landing Page para una plataforma de criptomonedas.",
+      footerLink: [
+        {
+          name: "Ver Proyecto",
+          url: "https://crypto-landing-v2.vercel.app/"
+        }
+      ]
     }
+    
   ],
   display: true // Set false to hide this section, defaults to true
 };
